@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="text-center mt-5  " style="color: green;">Largest of Two Numbers</h1>
+    <div class="container w-50">
+        <input id="a1" type="text" placeholder="Enter the First number" class="form-control ">
+        <input id="a2" type="text" placeholder="Enter the Second number" class="form-control mt-3">
+       <div class="mt-3 text-center"> <button type="submit" onclick="numbercheck()" class="btn btn-outline-danger">check</button></div>
+    </div>
+</body>
+<script>
+    function numbercheck(){
+        num1=a1.value
+        num2=a2.value
+        if(num1==num2){
+            compre=num1-num2
+            alert("Both Numbers are Equal")
+            
+        }
+        else if(num1>num2){
+            alert("First Number is Largest.")
+        }
+        else{
+            compre=num2-num1
+            alert("Second Number is Largest.")
+        }
+
+    }
+</script>
+</html>
